@@ -354,6 +354,66 @@ strong {
   transform: translateY(-2px);
 }
 
+.film-arama {
+  max-width: 32rem;
+  margin-top: 1.75rem;
+}
+
+.film-arama label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--text);
+  font-weight: 650;
+}
+
+.film-arama-kontrolleri {
+  display: flex;
+  gap: 0.65rem;
+}
+
+.film-arama input {
+  min-width: 0;
+  flex: 1;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 0.65rem;
+  color: var(--text);
+  background: var(--surface);
+  font: inherit;
+}
+
+.film-arama button {
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.65rem;
+  color: var(--text);
+  background: transparent;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.film-arama button:hover {
+  color: #061411;
+  background: var(--accent);
+}
+
+.film-arama input:focus-visible,
+.film-arama button:focus-visible {
+  outline: 3px solid var(--accent-strong);
+  outline-offset: 3px;
+}
+
+.film-arama #sonuc-sayaci {
+  margin: 0.65rem 0 0;
+  font-size: 0.9rem;
+}
+
+.film-arama #bos-sonuc-mesaji {
+  margin: 0.65rem 0 0;
+  color: var(--text);
+}
+
 .film-kartlari {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

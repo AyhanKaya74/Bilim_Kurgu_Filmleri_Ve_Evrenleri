@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header id="ust">
     <a class="site-adi" href="index.html">BilimKurguArşivi</a>
     <nav aria-label="Ana navigasyon">
       <ul>
@@ -27,8 +27,26 @@
         yönetmenleri ve çıkış yıllarıyla birlikte keşfedin.
       </p>
 
-      <div class="film-kartlari">
+      <div class="film-arama">
+        <label for="film-arama-kutusu">Film başlığına göre ara</label>
+        <div class="film-arama-kontrolleri">
+          <input
+            type="search"
+            id="film-arama-kutusu"
+            name="film-arama"
+            autocomplete="off"
+          >
+          <button type="button" id="arama-temizle">Temizle</button>
+        </div>
+        <p id="sonuc-sayaci" role="status" aria-live="polite" aria-atomic="true">9 sonuç</p>
+        <p id="bos-sonuc-mesaji" hidden>Aramanızla eşleşen film bulunamadı.</p>
+      </div>
+
+      <div class="film-kartlari" id="film-kartlari">
         <article class="film-karti">
+          <figure class="film-gorsel-alani">
+            <img src="image/Blade_Runner_2049.jpg" alt="Blade Runner 2049 film görseli">
+          </figure>
           <h2>Blade Runner 2049</h2>
           <p>
             Bir replikant avcısı olan K, geçmişin izlerini sürerken insanlık ve
@@ -39,6 +57,9 @@
         </article>
 
         <article class="film-karti">
+          <figure class="film-gorsel-alani">
+            <img src="image/interstellar.jpg" alt="Interstellar film görseli">
+          </figure>
           <h2>Interstellar</h2>
           <p>
             Yaşanabilir bir gelecek arayışındaki bir ekip, insanlığın
@@ -50,6 +71,9 @@
         </article>
 
         <article class="film-karti">
+          <figure class="film-gorsel-alani">
+            <img src="image/arrival.jpg" alt="Arrival film afişi">
+          </figure>
           <h2>Arrival</h2>
           <p>
             Dünya’ya gelen gizemli ziyaretçilerle iletişim kurmaya çalışan bir
@@ -60,6 +84,9 @@
         </article>
 
         <article class="film-karti">
+          <figure class="film-gorsel-alani">
+            <img src="image/ex_machina.jpg" alt="Ex Machina film görseli">
+          </figure>
           <h2>Ex Machina</h2>
           <p>
             Genç bir yazılımcı, gelişmiş bir yapay zekânın bilincini
@@ -71,6 +98,9 @@
         </article>
 
         <article class="film-karti">
+          <figure class="film-gorsel-alani">
+            <img src="image/dune.jpg" alt="Dune: Çöl Gezegeni film görseli">
+          </figure>
           <h2>Dune: Çöl Gezegeni</h2>
           <p>
             Paul Atreides, evrenin en değerli kaynağının bulunduğu Arrakis’te
@@ -81,6 +111,9 @@
         </article>
 
         <article class="film-karti">
+          <figure class="film-gorsel-alani">
+            <img src="image/matrix.jpg" alt="The Matrix film görseli">
+          </figure>
           <h2>The Matrix</h2>
           <p>
             Neo, gündelik gerçekliğin ardında insanlığı esir tutan bir
@@ -92,6 +125,9 @@
         </article>
 
         <article class="film-karti">
+          <figure class="film-gorsel-alani">
+            <img src="image/inception.jpg" alt="Inception film görseli">
+          </figure>
           <h2>Inception</h2>
           <p>
             Rüyalar aracılığıyla başkalarının zihnine giren bir ekip, bu kez
@@ -103,6 +139,9 @@
         </article>
 
         <article class="film-karti">
+          <figure class="film-gorsel-alani">
+            <img src="image/2001_a_space_odyssey.jpg" alt="2001: A Space Odyssey film görseli">
+          </figure>
           <h2>2001: A Space Odyssey</h2>
           <p>
             Gizemli bir yapıtaşının izini süren insanlık, uzay keşfi ve
@@ -113,6 +152,9 @@
         </article>
 
         <article class="film-karti">
+          <figure class="film-gorsel-alani">
+            <img src="image/children_of_men.jpg" alt="Children of Men film görseli">
+          </figure>
           <h2>Children of Men</h2>
           <p>
             İnsanlığın doğurganlığını yitirdiği yakın gelecekte, umudun son
@@ -126,7 +168,21 @@
   </main>
 
   <footer>
-    <p>BilimKurguArşivi — bilim kurgu sinemasına bir keşif yolculuğu.</p>
+    <div class="footer-icerik">
+      <div class="footer-markasi">
+        <a class="site-adi" href="index.html">BilimKurguArşivi</a>
+        <p>Geçmişten geleceğe uzanan bilim kurgu dünyasını keşfet.</p>
+      </div>
+      <div class="footer-not">
+        <span>Seçki notu</span>
+        <p>Dokuz film, dokuz farklı gelecekte insanlığın sınırları.</p>
+      </div>
+    </div>
+    <div class="footer-alt">
+      <span>© BilimKurguArşivi</span>
+      <span>Gezegenler · Zamanlar · Olasılıklar</span>
+    </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header id="ust">
     <a class="site-adi" href="index.html">BilimKurguArşivi</a>
     <nav aria-label="Ana navigasyon">
       <ul>
@@ -20,23 +20,77 @@
   </header>
 
   <main>
-    <section aria-labelledby="hosgeldiniz-baslik">
-      <h1 id="hosgeldiniz-baslik">BilimKurguArşivi’ne hoş geldiniz</h1>
-      <p>
-        BilimKurguArşivi; bilim kurgu sinemasını seven, kült filmleri keşfetmek
-        ve bu filmlerin kurduğu evrenlere yakından bakmak isteyen sinema
-        tutkunları ve bilim kurgu izleyicileri için hazırlandı.
-      </p>
-      <p>
-        Yapay zekâdan uzay yolculuğuna, gelecek toplumlarından insanlığın
-        varoluş sorularına uzanan seçkideki filmleri inceleyin.
-      </p>
-      <a class="iceriklere-baglanti" href="icerikler.html">Dokuz filmi keşfet</a>
+    <section class="ana-sayfa-hero" aria-labelledby="hosgeldiniz-baslik">
+      <div class="hero-metni">
+        <p class="ust-etiket">Bilim kurgu sinemasına bir keşif yolculuğu</p>
+        <h1 id="hosgeldiniz-baslik">Geleceğin hikâyeleri, bugünün soruları.</h1>
+        <p class="hero-ozet">
+          Uzak galaksilerden yapay zekâya, insan olmanın sınırlarını araştıran
+          filmleri keşfedin. Her film, başka bir evrene açılan yeni bir kapı.
+        </p>
+        <div class="hero-aksiyonlar">
+          <a class="iceriklere-baglanti" href="icerikler.html">Dokuz filmi keşfet</a>
+          <a class="metin-baglanti" href="hakkinda.html">Arşiv hakkında bilgi al <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <aside class="hero-bilgi-karti" aria-label="Arşiv seçkisi">
+        <p class="bilgi-etiketi">Arşiv seçkisi</p>
+        <p class="film-sayisi">09</p>
+        <p>farklı gelecek<br>tasarımı ve evren</p>
+        <span class="bilgi-cizgisi" aria-hidden="true"></span>
+        <p class="bilgi-alt-metin">Bir sonraki favori filminiz burada olabilir.</p>
+      </aside>
+    </section>
+
+    <section class="tema-bolumu" aria-labelledby="tema-baslik">
+      <div class="bolum-basligi">
+        <p class="ust-etiket">Keşfetmeye nereden başlamalı?</p>
+        <h2 id="tema-baslik">Bir tür, sayısız olasılık</h2>
+        <p>Seçkideki hikâyeler farklı dünyaları anlatırken ortak soruların izini sürüyor.</p>
+      </div>
+      <div class="tema-kartlari">
+        <article class="tema-karti">
+          <span class="tema-numarasi">01 / ZEKÂ</span>
+          <h3>İnsan ve makine</h3>
+          <p>Yapay zekâ, bilinç ve insan olmanın anlamı üzerine düşündüren öyküler.</p>
+        </article>
+        <article class="tema-karti">
+          <span class="tema-numarasi">02 / EVREN</span>
+          <h3>Uzayın derinlikleri</h3>
+          <p>Yıldızlar arası yolculuklar, yabancı dünyalar ve keşfedilmemiş sınırlar.</p>
+        </article>
+        <article class="tema-karti">
+          <span class="tema-numarasi">03 / GELECEK</span>
+          <h3>Yarının toplumları</h3>
+          <p>Bugünkü seçimlerimizin geleceği ve insanlığı nasıl şekillendirebileceği.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secim-banneri" aria-labelledby="secim-baslik">
+      <div>
+        <p class="ust-etiket">Keşif seni bekliyor</p>
+        <h2 id="secim-baslik">Bir sonraki yolculuğunu seç.</h2>
+      </div>
+      <a class="metin-baglanti" href="icerikler.html">Film seçkisine git <span aria-hidden="true">→</span></a>
     </section>
   </main>
 
   <footer>
-    <p>BilimKurguArşivi — bilim kurgu sinemasına bir keşif yolculuğu.</p>
+    <div class="footer-icerik">
+      <div class="footer-markasi">
+        <a class="site-adi" href="index.html">BilimKurguArşivi</a>
+        <p>Geçmişten geleceğe uzanan bilim kurgu dünyasını keşfet.</p>
+      </div>
+      <div class="footer-not">
+        <span>Seçki notu</span>
+        <p>Dokuz film, dokuz farklı gelecekte insanlığın sınırları.</p>
+      </div>
+    </div>
+    <div class="footer-alt">
+      <span>© BilimKurguArşivi</span>
+      <span>Gezegenler · Zamanlar · Olasılıklar</span>
+    </div>
   </footer>
 </body>
 </html>

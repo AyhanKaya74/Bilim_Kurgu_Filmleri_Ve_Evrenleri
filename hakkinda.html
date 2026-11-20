@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header id="ust">
     <a class="site-adi" href="index.html">BilimKurguArşivi</a>
     <nav aria-label="Ana navigasyon">
       <ul>
@@ -20,35 +20,67 @@
   </header>
 
   <main>
-    <article aria-labelledby="hakkinda-baslik">
-      <h1 id="hakkinda-baslik">BilimKurguArşivi hakkında</h1>
-
-      <section aria-labelledby="secim-nedeni">
-        <h2 id="secim-nedeni">Bu konuyu neden seçtim?</h2>
-        <p>
-          Bilim kurgu filmleri yalnızca uzak gezegenleri ve gelişmiş
-          teknolojileri anlatmaz; insanın kim olduğunu, geleceğin nasıl
-          şekillenebileceğini ve bugünkü seçimlerimizin sonuçlarını da
-          düşündürür. Bu türün farklı hikâyeler ve evrenler kurma gücü,
-          sinema aracılığıyla merak uyandırdığı için bu konuyu seçtim.
+    <article class="hakkinda-sayfasi" aria-labelledby="hakkinda-baslik">
+      <div class="hakkinda-giris">
+        <p class="ust-etiket">Arşivin hikâyesi</p>
+        <h1 id="hakkinda-baslik">Merakla başlayan bir yolculuk.</h1>
+        <p class="hakkinda-ozet">
+          BilimKurguArşivi, bilim kurgu sinemasının hayal gücünü ve bugüne
+          tuttuğu aynayı birlikte keşfetmek için oluşturuldu.
         </p>
-      </section>
+      </div>
 
-      <section aria-labelledby="ziyaretci-faydasi">
-        <h2 id="ziyaretci-faydasi">Bu site ziyaretçiye nasıl fayda sağlar?</h2>
+      <div class="hakkinda-kartlari">
+        <section class="hakkinda-karti" aria-labelledby="secim-nedeni">
+          <span class="hakkinda-sira">01 — NEDEN BİLİM KURGU?</span>
+          <h2 id="secim-nedeni">Uzak gelecek, tanıdık sorular.</h2>
+          <p>
+            Bilim kurgu filmleri yalnızca uzak gezegenleri ve gelişmiş
+            teknolojileri anlatmaz; insanın kim olduğunu, geleceğin nasıl
+            şekillenebileceğini ve bugünkü seçimlerimizin sonuçlarını da
+            düşündürür. Farklı hikâyeler ve evrenler kurma gücüyle merak
+            uyandırdığı için bu konuyu seçtim.
+          </p>
+        </section>
+
+        <section class="hakkinda-karti" aria-labelledby="ziyaretci-faydasi">
+          <span class="hakkinda-sira">02 — BU ARŞİVDE</span>
+          <h2 id="ziyaretci-faydasi">Keşfetmek için sade bir başlangıç.</h2>
+          <p>
+            Seçilmiş dokuz filmi kısa açıklamaları, yönetmenleri ve çıkış
+            yıllarıyla bir arada bulabilirsiniz. Tanımadığınız filmleri
+            keşfedebilir, izlemek istediklerinizi belirleyebilir ve bilim kurgu
+            sinemasının farklı temaları arasında gezinebilirsiniz.
+          </p>
+        </section>
+      </div>
+
+      <aside class="hakkinda-notu">
+        <p class="ust-etiket">Arşivin pusulası</p>
         <p>
-          BilimKurguArşivi, seçilmiş dokuz filmi kısa açıklamaları,
-          yönetmenleri ve çıkış yıllarıyla bir arada sunar. Böylece ziyaretçiler
-          tanımadıkları filmleri keşfedebilir, izlemek istediklerini
-          belirleyebilir ve bilim kurgu sinemasının farklı temaları arasında
-          gezinmek için kolay bir başlangıç noktası bulabilir.
+          Yapay zekâdan uzay yolculuğuna, insanlığın geleceğinden varoluş
+          sorularına: her başlık yeni bir düşünceye ve yeni bir evrene açılır.
         </p>
-      </section>
+        <a class="metin-baglanti" href="icerikler.html">Filmleri incele <span aria-hidden="true">→</span></a>
+      </aside>
     </article>
   </main>
 
   <footer>
-    <p>BilimKurguArşivi — bilim kurgu sinemasına bir keşif yolculuğu.</p>
+    <div class="footer-icerik">
+      <div class="footer-markasi">
+        <a class="site-adi" href="index.html">BilimKurguArşivi</a>
+        <p>Geçmişten geleceğe uzanan bilim kurgu dünyasını keşfet.</p>
+      </div>
+      <div class="footer-not">
+        <span>Seçki notu</span>
+        <p>Dokuz film, dokuz farklı gelecekte insanlığın sınırları.</p>
+      </div>
+    </div>
+    <div class="footer-alt">
+      <span>© BilimKurguArşivi</span>
+      <span>Gezegenler · Zamanlar · Olasılıklar</span>
+    </div>
   </footer>
 </body>
 </html>
